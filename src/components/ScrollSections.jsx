@@ -95,7 +95,7 @@ export default function ScrollSections() {
             " />
 
             <img
-              src="/MACE.jpeg"
+              src="/MACE.jpg"
               alt="MACE Kothamangalam"
               className="
                 relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[420px]

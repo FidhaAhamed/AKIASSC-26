@@ -15,7 +15,7 @@ const slides = [
     },
   {
     title: "About MACE Kothamangalam",
-    img: "/MACE.jpeg",
+    img: "/MACE.jpg",
     text:
       "Established in 1989, the IEEE MACE Student Branch is one of Kerala’s oldest and most distinguished student branches. With one of the highest global memberships, it continues to uphold a legacy of excellence, innovation, and leadership.The branch is renowned for organizing impactful initiatives such as .hack();, CYBOSIUM, SPARC, and FUSION, providing students with opportunities to grow technically and professionally. Its consistent achievements, including multiple IEEE Regional Exemplary Student Branch Awards and the IEEE India Council Best Student Branch Award, stand as a testament to its commitment to fostering innovation and empowering future engineers."
   }
