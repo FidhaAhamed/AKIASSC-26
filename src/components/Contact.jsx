@@ -7,7 +7,7 @@ export default function Contact() {
       phone: "+91 62381 40489",
     },
     {
-      name: "Biju K",
+      name: "Dr. Biju K",
       designation: "Chair IEEE IA/IE/PELS Jt.Chapter Kerala",
       email: "bijuk@ieee.org",
       phone: "+91 94468 08243",
