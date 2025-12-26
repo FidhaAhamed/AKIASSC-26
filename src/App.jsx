@@ -14,8 +14,8 @@ export default function App() {
     <div className="relative min-h-screen">
       <ParticlesBackground />
       <Navbar />
-      <LogoHero />
-      <ScrollSections />
+      {/* <LogoHero /> */}
+      {/* <ScrollSections /> */}
       <Hero />
       <About />
       <Tickets />

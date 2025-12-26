@@ -9,13 +9,12 @@ export default function Footer() {
       "
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-
-        {/* Logo */}
-        <img
-          src="/akiassc'26-logo.png"
-          alt="AKIASSC Logo"
-          className="h-20"
-        />
+{/* Logo */}
+<img
+  src={`${import.meta.env.BASE_URL}akiassc'26-logo.png`}
+  alt="AKIASSC Logo"
+  className="h-20"
+/>
 
         {/* Links */}
         <div className="text-center md:text-right">
@@ -56,11 +55,13 @@ export default function Footer() {
             </a>
           </p>
 
-          <p className="text-sm text-gray-400 mt-12">
-            © 2026 AKIASSC | Powered by IEEE IA/IE/PELS Jt. Chapter Kerala
-          </p>
+          
         </div>
+       
       </div>
+       <p className="text-sm text-gray-400 text-center mt-12">
+  © 2026 AKIASSC | Powered by IEEE IA/IE/PELS Jt. Chapter Kerala
+</p>
     </footer>
   );
 }
