@@ -48,7 +48,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-10 text-sm uppercase tracking-wide">
-          {["Home", "About", "Contact"].map(item => (
+          {["Home", "About","Events","Gallery","Contact"].map(item => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase()}`}
@@ -121,7 +121,7 @@ export default function Navbar() {
             text-center
           "
         >
-          {["Home", "About", "Contact"].map(item => (
+          {["Home", "About","Events","Gallery","Contact"].map(item => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}

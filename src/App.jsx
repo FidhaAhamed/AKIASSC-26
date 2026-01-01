@@ -3,7 +3,9 @@ import LogoHero from "./components/LogoHero";
 import ScrollSections from "./components/ScrollSections";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import EventHighlights from "./components/EventHighlights";
 import Tickets from "./components/Tickets";
+import Gallery from "./components/Gallery";
 import Countdown from "./components/Countdown";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -18,7 +20,9 @@ export default function App() {
       {/* <ScrollSections /> */}
       <Hero />
       <About />
+      <EventHighlights />
       <Tickets />
+      <Gallery />
       <Countdown />
       <Contact />
       <Footer />
