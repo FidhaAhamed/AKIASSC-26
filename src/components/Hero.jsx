@@ -71,7 +71,7 @@ export default function Hero() {
           style={{ textShadow: "0 0 18px rgba(212,175,55,0.45)" }}
         >
           Join us to learn, innovate, and lead the future <br className="hidden sm:block" />
-          at MACE Kothamangalam on January 30 & 31 and February 1
+          at MACE Kothamangalam on March 06, 07 & 08
         </p>
 
         {/* CTA */}
