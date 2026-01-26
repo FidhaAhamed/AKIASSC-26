@@ -4,7 +4,7 @@ export default function EventSchedule() {
   const schedule = [
     {
       day: "Day 1",
-      date: "January 30, 2026",
+      date: "March 06, 2026",
       events: [
         { time: "9:00 AM – 10:00 AM", event: "Registration" },
         { time: "10:30 AM – 1:30 PM", event: "Parallel Workshops" },
@@ -19,7 +19,7 @@ export default function EventSchedule() {
     },
     {
       day: "Day 2",
-      date: "January 31, 2026",
+      date: "March 07, 2026",
       events: [
         { time: "8:00 AM – 9:00 AM", event: "Breakfast" },
         { time: "9:00 AM – 2:00 PM", event: "Industrial Visit 1 & Lunch" },
@@ -33,7 +33,7 @@ export default function EventSchedule() {
     },
     {
       day: "Day 3",
-      date: "February 1, 2026",
+      date: "March 8, 2026",
       events: [
         { time: "8:30 AM – 9:30 AM", event: "Breakfast" },
         { time: "9:45 AM – 11:45 AM", event: "Talk Session 3" },
