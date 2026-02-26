@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 
 export default function Countdown() {
-  const eventDate = new Date("2026-03-6T00:00:00").getTime();
+  // explicitly build the date in a way that avoids parsing quirks
+  // March is month 2 when using the numeric constructor (0-based index).
+  const eventDate = new Date(2026, 2, 6, 0, 0, 0).getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: "00",
@@ -11,11 +13,16 @@ export default function Countdown() {
   });
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      const now = new Date().getTime();
+    // helper to calculate and update the remaining time
+    const update = () => {
+      const now = Date.now();
       const diff = eventDate - now;
 
-      if (diff <= 0) return;
+      if (diff <= 0) {
+        // time's up: clear timer and set everything to 00
+        setTimeLeft({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+        return false;
+      }
 
       setTimeLeft({
         days: String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, "0"),
@@ -29,6 +36,16 @@ export default function Countdown() {
           Math.floor((diff / 1000) % 60)
         ).padStart(2, "0"),
       });
+      return true;
+    };
+
+    // perform an initial update immediately
+    update();
+
+    const timer = setInterval(() => {
+      if (!update()) {
+        clearInterval(timer);
+      }
     }, 1000);
 
     return () => clearInterval(timer);
