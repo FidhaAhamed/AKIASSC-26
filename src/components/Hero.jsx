@@ -56,7 +56,7 @@ export default function Hero() {
               "0 0 30px rgba(212,175,55,0.65), 0 0 60px rgba(212,175,55,0.35)",
           }}
         >
-          We Are Live Now
+         Registration Closed
         </h2>
 
         {/* Event Details */}
