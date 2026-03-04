@@ -22,7 +22,7 @@ export default function App() {
       <Hero />
       <About />
       <EventHighlights />
-      <Tickets />
+      {/* <Tickets /> */}
       <EventSchedule />
       <Gallery />
       <Countdown />
